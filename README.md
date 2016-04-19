@@ -38,3 +38,7 @@ A3:
 6) left to right
 7) yah i see the squares. looks like a youtube vid using the school wifi
 
+A7:
+
+1. 90
+2. 112
