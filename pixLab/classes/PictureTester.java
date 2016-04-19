@@ -34,12 +34,41 @@ public class PictureTester
 	temple.mirrorTemple();
 	temple.explore();
     }
+    public static void testMirrorArms()
+    {
+	Picture snowman = new Picture("snowman.jpg");
+	temple.explore();
+	temple.mirrorTempleArms();
+	temple.explore();
+    }
+
+    public static void testMirrorGull()
+    {
+	Picture seagull = new Picture("seagull.jpg");
+	temple.explore();
+	temple.mirrorGull();
+	temple.explore();
+    }
+
   
     /** Method to test the collage method */
     public static void testCollage()
     {
 	Picture canvas = new Picture("640x480.jpg");
 	canvas.createCollage();
+	canvas.explore();
+    }
+    public static void testCollage()
+    {
+	Picture flower = new Picture("flower1.jpg");
+	Picture canvas = new Picture("640x480.jpg");
+	canvas.copy(flower, 0, 33, 33, 66);
+	canvas.explore();
+    }
+    public static void testMyCollage()
+    {
+	Picture canvas = new Picture("640x480.jpg");
+	canvas.myCollage();
 	canvas.explore();
     }
   
@@ -118,12 +147,12 @@ public class PictureTester
 	//testGrayscale();
 	//testFixUnderwater();
 	//testMirrorVertical();
-	//testMirrorTemple();
-	//testMirrorArms();
-	//testMirrorGull();
+	testMirrorTemple();
+	testMirrorArms();
+	testMirrorGull();
 	//testMirrorDiagonal();
 	//testCollage();
-	//testCopy();
+	testCopy();
 	//testEdgeDetection();
 	//testEdgeDetection2();
 	//testChromakey();
