@@ -90,7 +90,7 @@ public class PictureTester
 		for (int col = 0; col < width / 2; col++)
 		    {
 			leftPixel = pixels[row][col];
-			rightPixel = pixels[row][width ¡V 1 - col];
+			rightPixel = pixels[row][width Â¡V 1 - col];
 			//some temporary pointer is needed, don't know the return type.
 			leftPixel.setColor(rightPixel.getColor());
 			rightPixel.setColor(leftPixel.getColor());
@@ -152,6 +152,7 @@ public class PictureTester
 	testMirrorGull();
 	//testMirrorDiagonal();
 	//testCollage();
+	testMyCollage();
 	testCopy();
 	//testEdgeDetection();
 	//testEdgeDetection2();
